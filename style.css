@@ -1,0 +1,135 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background:#fff;
+    padding: 15px 0px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    user-select: none;
+    justify-content: center;
+    margin-left: 20px;
+}
+.logo{
+    animation: coloresLetras 5s infinite;
+    text-shadow: -2px 2px 8px #0008;
+    margin: 0px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.logo-img-container{
+    animation: coloresFondo 5s infinite;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -5px 5px 8px #0008;
+}
+.logo-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes coloresLetras {
+    0%{color: #C0392B ;}
+    10%{color: #E74C3C ;}
+    20%{color: #9B59B6 ;}
+    30%{color: #8E44AD ;}
+    40%{color: #2980B9 ;}
+    50%{color: #3498DB ;}
+    60%{color: #1ABC9C ;}
+    70%{color: #16A085 ;}
+    80%{color: #2ECC71 ;}
+    90%{color: #F1C40F ;}
+    100%{color: #E67E22;}
+}
+@keyframes coloresFondo {
+    0%{background: #C0392B ;}
+    10%{background: #E74C3C ;}
+    20%{background: #9B59B6 ;}
+    30%{background: #8E44AD ;}
+    40%{background: #2980B9 ;}
+    50%{background: #3498DB ;}
+    60%{background: #1ABC9C ;}
+    70%{background: #16A085 ;}
+    80%{background: #2ECC71 ;}
+    90%{background: #F1C40F ;}
+    100%{background: #E67E22;}
+}
+
+.nav{
+    padding: 5px;
+    margin-right: 20px;
+}
+.nav-container{
+    list-style: none;
+    display: flex;
+    padding: 10px 20px;
+}
+.nav-item{
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0px 10px;
+}
+.nav-item a{
+    color: #000;
+}
+.nav-item a:hover{
+    color: #48e;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 20px 0px 20px;
+}
+#quien-soy{
+    width: 50%;
+    border-radius: 28px;
+    background: rgba(170, 170, 170, 0.067);
+    border: 2px solid #000;
+}
+#quien-soy h2{
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 10px 0px;
+    text-align: center;
+}
+#quien-soy h4{
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+}
+#quien-soy p{
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+}
+#quien-soy p span{
+    font-weight: bold;
+}
+#quien-soy p span:nth-child(2){
+    font-weight: bold;
+    color: #E67E22;
+}
+#quien-soy p span:nth-child(3){
+    font-weight: bold;
+    color: #2980B9;
+}
+#quien-soy p span:nth-child(4){
+    font-weight: bold;
+    color: #F1C40F;
+}
